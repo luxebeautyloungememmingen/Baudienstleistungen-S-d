@@ -1,0 +1,44 @@
+/* ============================================================
+   BAUDIENSTLEISTUNGEN SÜD – CORPORATE DESIGN (verbindlich)
+   ------------------------------------------------------------
+   Diese Datei ist die einzige Quelle für Farben, Schrift und
+   Grundform der Marke. Alle Seiten binden sie als erstes ein.
+   Änderungen am Erscheinungsbild passieren NUR hier.
+   Dokumentation: corporate-design.html
+   Logo-Quelle: design/ · Schriften (frei nutzbar): Khand (SIL OFL,
+   selbst gehostet) für Logo & Headlines; Text = Arial/Helvetica (System).
+   ============================================================ */
+@font-face{font-family:'Khand';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/khand-600.woff2') format('woff2')}
+@font-face{font-family:'Khand';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/khand-700.woff2') format('woff2')}
+:root{
+  /* Kernfarben */
+  --ink:#191a17;            /* Anthrazit – Basis für Text & dunkle Flächen */
+  --paper:#f3f1eb;          /* Warmes Hellgrau – Seitenhintergrund */
+  --white:#fff;             /* Weiß – Karten & Kontrastflächen */
+  --accent:#c9782f;         /* Kupferorange – Buttons, Akzente auf hellem Grund */
+  --accent-light:#e19a57;   /* Helles Kupfer – Akzente auf dunklem Grund */
+  --muted:#696b64;          /* Graugrün – Sekundärtext auf hellem Grund */
+  --line:rgba(25,26,23,.14);/* Feine Trennlinien */
+
+  /* Dunkle Flächen (Abstufungen von Ink) */
+  --surface-deep:#141512;   /* Header & Footer, Logo-Anthrazit */
+  --surface-dark:#1b1c19;   /* Hero-Hintergrund */
+  --surface-warm:#262720;   /* Hervorgehobene dunkle Sektionen */
+
+  /* Helle Tönungen (aus Amber abgeleitet) */
+  --tint-icon:#f3eee7;      /* Icon-Flächen */
+  --tint-notice:#f4e5d5;    /* Hinweise & Platzhalter-Markierung */
+  --notice-text:#5d4935;    /* Text auf tint-notice */
+
+  /* Textabstufungen auf hellem Grund */
+  --text-strong:#3c3e38;    /* Fließtext */
+  --text-soft:#494b45;      /* Listen, Nebentext */
+  --text-label:#4d4f48;     /* Formular-Labels */
+
+  /* Typografie */
+  --font-sans:Arial,Helvetica,sans-serif;                 /* Lauftext (System, wird nie geladen) */
+  --font-display:'Khand','Arial Narrow',Arial,sans-serif; /* Headlines & Logo (SIL OFL, selbst gehostet) */
+
+  /* Form: Marke arbeitet mit scharfen Kanten – keine Rundungen */
+  --radius:0;
+}

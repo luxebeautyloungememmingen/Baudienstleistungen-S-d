@@ -10,6 +10,11 @@ Das Logo basiert auf einem kantigen, dachförmigen BS-Monogramm und einer schmal
 - `logo-signet-hell.svg` – Signet auf dunkler Fläche
 - `logo-horizontal.png` und `logo-signet.png` – PNG-Exporte mit transparentem Hintergrund
 - `logo-preview.png` – Vorschau beider Hauptvarianten
+- `fonts/Khand-Bold.ttf` + `fonts/OFL.txt` – Logo-Schrift inkl. Lizenz
+
+## Schrift
+
+Die Wortmarke ist in **Khand Bold** gesetzt (SIL Open Font License – frei für private und kommerzielle Nutzung, keine Lizenzkosten). In allen SVG- und PNG-Dateien ist die Schrift in Pfade umgewandelt; zum Verwenden der Logos muss nirgends eine Schrift installiert sein. Für neue Zuschnitte oder Werbemittel liegt die Schriftdatei unter `fonts/`. Auf der Website wird Khand zusätzlich als selbst gehostete Webfont für Headlines genutzt (`assets/fonts/`).
 
 ## Farben
 

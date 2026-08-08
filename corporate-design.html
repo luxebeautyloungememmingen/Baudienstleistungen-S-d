@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Corporate Design – Baudienstleistungen Süd</title>
+  <meta name="description" content="Verbindliches Corporate-Design-Handbuch: Farben, Typografie, Gestaltungselemente und Komponenten von Baudienstleistungen Süd.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#141512">
+  <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicons/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicons/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#c9782f">
+  <meta name="msapplication-TileColor" content="#141512">
+  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+  <link rel="stylesheet" href="assets/brand.css">
+  <link rel="stylesheet" href="assets/legal.css">
+  <style>
+    .swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 10px}
+    .swatch{background:#fff;border:1px solid var(--line)}
+    .swatch .chip{height:96px;border-bottom:1px solid var(--line)}
+    .swatch .meta{padding:14px 16px}
+    .swatch b{display:block;font-size:15px;margin-bottom:5px}
+    .swatch code{display:block;font-size:12px;color:var(--muted);line-height:1.6}
+    .swatch small{display:block;margin-top:8px;color:var(--text-soft);font-size:12px;line-height:1.55}
+    .ratio{display:flex;height:56px;border:1px solid var(--line);margin:18px 0 6px;overflow:hidden}
+    .ratio div{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;letter-spacing:.06em;white-space:nowrap}
+    .logoCard{padding:48px 30px;display:grid;place-items:center;gap:26px;border:1px solid var(--line);margin-bottom:14px}
+    .logoCard.onDark{background:var(--surface-deep)}
+    .logoCard.onLight{background:var(--white)}
+    .logoCard img{width:min(440px,100%);height:auto}
+    .logoCard img.sig{width:110px}
+    .logoRow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .fileList{margin:0 0 16px;padding:0;list-style:none;background:#fff;border:1px solid var(--line)}
+    .fileList li{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line);font-size:13px!important;color:var(--text-soft)}
+    .fileList li:last-child{border-bottom:0}
+    .fileList code{color:var(--ink);font-weight:700;white-space:nowrap}
+    .typoSample{padding:30px;background:#fff;border:1px solid var(--line);margin-bottom:14px}
+    .typoSample>span{display:block;margin-bottom:14px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .tDisplay{font-family:var(--font-display);font-size:clamp(46px,5.6vw,74px);font-weight:700;line-height:.94;letter-spacing:.012em}
+    .tDisplay em{color:var(--accent);font-style:normal}
+    .tH2{font-family:var(--font-display);font-size:clamp(32px,3.8vw,48px);font-weight:700;line-height:.96;letter-spacing:.012em}
+    .tKicker{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .tKicker:before{content:"";display:inline-block;width:28px;height:2px;margin:0 12px 3px 0;background:currentColor}
+    .tBody{max-width:560px;color:var(--text-strong);font-size:15px;line-height:1.8}
+    .elGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .el{padding:24px;background:#fff;border:1px solid var(--line)}
+    .el h3{margin:0 0 10px!important;font-size:15px!important}
+    .el p{margin:0;font-size:13px!important;color:var(--muted)!important}
+    .elDemo{display:flex;align-items:center;gap:14px;min-height:44px;margin-bottom:14px}
+    .plus{color:var(--accent);font-size:18px;font-weight:700}
+    .rhomb{width:5px;height:5px;background:var(--accent);transform:rotate(45deg)}
+    .numDemo{color:var(--accent);font-size:12px;font-weight:800}
+    .lineDemo{flex:1;height:1px;background:var(--line)}
+    .btnRow{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .cdBtn{min-height:54px;padding:0 23px;display:inline-flex;align-items:center;gap:26px;border:1px solid transparent;font-size:14px;font-weight:750;text-decoration:none;cursor:default}
+    .cdBtn.primary{background:var(--accent);color:#fff}
+    .cdBtn.ghostDark{border-color:rgba(255,255,255,.4);color:#fff}
+    .cdBtn.lightOnDark{background:#fff;color:var(--ink)}
+    .cdBtn.darkOnLight{background:var(--ink);color:#fff}
+    .darkStrip{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:26px;background:var(--ink);border:1px solid var(--line);margin-top:12px}
+    .dodont{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .dodont div{padding:24px;background:#fff;border:1px solid var(--line)}
+    .dodont h3{margin:0 0 14px!important;font-size:12px!important;letter-spacing:.12em;text-transform:uppercase}
+    .dodont .yes h3{color:var(--accent)}
+    .dodont .no h3{color:#a33}
+    .dodont ul{margin:0;padding:0;list-style:none}
+    .dodont li{margin-bottom:10px;padding-left:18px;position:relative;font-size:14px;color:var(--text-soft);line-height:1.6}
+    .dodont .yes li:before{content:"+";position:absolute;left:0;color:var(--accent);font-weight:700}
+    .dodont .no li:before{content:"–";position:absolute;left:0;color:#a33;font-weight:700}
+    pre.tokens{margin:0;padding:26px;background:var(--surface-deep);color:#e8e6df;font-size:13px;line-height:1.75;overflow-x:auto}
+    pre.tokens .c{color:#8a8d83}
+    @media(max-width:760px){.swatches,.elGrid,.dodont{grid-template-columns:1fr}.ratio div{font-size:9px}}
+  </style>
+</head>
+<body id="top">
+  <a class="skipLink" href="#inhalt">Direkt zum Inhalt</a>
+  <header class="header"><a class="brand" href="homepage.html" aria-label="Baudienstleistungen Süd – Startseite"><img src="assets/logo-horizontal-hell.svg" alt="Baudienstleistungen Süd" width="1617" height="260"></a><button class="menu" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="hauptnavigation"><span></span><span></span></button><nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation"><a href="homepage.html#start">Start</a><a href="homepage.html#leistungen">Leistungen</a><a href="homepage.html#ueber-uns">Über uns</a><a href="homepage.html#personalservice">Personalservice</a><a href="homepage.html#kontakt">Kontakt</a><a class="navCta" href="homepage.html#kontakt">Projekt anfragen</a></nav></header>
+
+  <main id="inhalt">
+    <section class="legalHero"><div class="wrap"><p class="kicker">Markenhandbuch · Intern</p><h1>Corporate<br>Design.</h1><p>Das verbindliche Erscheinungsbild von Baudienstleistungen Süd – abgeleitet aus der Website. Gilt für Website, Drucksachen, Fahrzeugbeschriftung, Arbeitskleidung und alle künftigen Materialien. Technische Quelle: <strong>assets/brand.css</strong> · Logo &amp; Icons: <strong>design/</strong>.</p></div></section>
+
+    <div class="legalBody"><div class="wrap legalGrid">
+      <aside class="toc" aria-label="Inhaltsverzeichnis">
+        <h2>Inhalt</h2>
+        <ol>
+          <li><a href="#markenkern">Markenkern</a></li>
+          <li><a href="#logo">Logo</a></li>
+          <li><a href="#farben">Farben</a></li>
+          <li><a href="#typografie">Typografie</a></li>
+          <li><a href="#elemente">Gestaltungselemente</a></li>
+          <li><a href="#komponenten">Komponenten</a></li>
+          <li><a href="#bildsprache">Bildsprache</a></li>
+          <li><a href="#dodont">Do &amp; Don't</a></li>
+          <li><a href="#tokens">Design-Tokens</a></li>
+        </ol>
+      </aside>
+
+      <div class="doc">
+        <section id="markenkern">
+          <h2>1. Markenkern</h2>
+          <p>Die Marke steht für <strong>bodenständige, verlässliche Bauarbeit mit klarer Kommunikation</strong>. Das Design übersetzt das in drei Prinzipien:</p>
+          <ul>
+            <li><strong>Kantig statt verspielt</strong> – keine abgerundeten Ecken, keine Verläufe als Dekoration, keine Schatten-Spielereien.</li>
+            <li><strong>Dunkel &amp; warm</strong> – Anthrazit als Fundament, Kupferorange als einziger Farbakzent (erinnert an Holz, Schalung, Warnfarbe auf der Baustelle).</li>
+            <li><strong>Viel Raum, große Worte</strong> – große, eng gesetzte Headlines, klare Flächen, feine Linien als Ordnungssystem.</li>
+          </ul>
+        </section>
+
+        <section id="logo">
+          <h2>2. Logo</h2>
+          <p>Das Logo besteht aus dem <strong>kantigen, dachförmigen BS-Monogramm</strong> (Haus-Silhouette: „B" in Anthrazit, „S" in Kupferorange) und der schmalen, technischen Wortmarke. „SÜD" ist immer der farbige Anker. Diese Form ist verbindlich – Quelle: Ordner <strong>design/</strong>, eingebundene Dateien in <strong>assets/</strong>.</p>
+          <div class="logoCard onLight"><img src="assets/logo-horizontal.svg" alt="Hauptlogo auf hellem Grund" width="1617" height="260"></div>
+          <div class="logoCard onDark"><img src="assets/logo-horizontal-hell.svg" alt="Hauptlogo auf dunklem Grund" width="1617" height="260"></div>
+          <div class="logoRow">
+            <div class="logoCard onLight"><img class="sig" src="assets/logo-signet.svg" alt="BS-Signet auf hellem Grund"></div>
+            <div class="logoCard onDark"><img class="sig" src="assets/logo-signet-hell.svg" alt="BS-Signet auf dunklem Grund"></div>
+          </div>
+          <h3>Dateien</h3>
+          <ul class="fileList">
+            <li><code>logo-horizontal</code><span>Hauptlogo für helle Hintergründe (Anthrazit + Kupferorange)</span></li>
+            <li><code>logo-horizontal-hell</code><span>Hauptlogo für dunkle Hintergründe (Weiß + Helles Kupfer)</span></li>
+            <li><code>logo-signet</code> / <code>-hell</code><span>kompaktes BS-Signet für kleine Flächen, Favicons, Stempel</span></li>
+            <li><code>favicons/</code><span>komplettes Favicon-/PWA-Paket inkl. Social-Preview (1200×630)</span></li>
+          </ul>
+          <h3>Regeln</h3>
+          <ul>
+            <li>Auf hellem Grund die Hauptvariante, auf dunklem Grund die helle Variante – keine weiteren Farbkombinationen erfinden.</li>
+            <li>Auf Kupferflächen kein Logo platzieren; dort reicht Text in Weiß.</li>
+            <li>Schutzraum: rundum mindestens die halbe Höhe des „S" freihalten.</li>
+            <li>Mindestgrößen: Signet nicht unter 24&nbsp;px, vollständige Wortmarke nicht unter 180&nbsp;px Breite.</li>
+            <li>Nicht verzerren, nicht drehen, keine Kontur, kein Schatten, Farben nie tauschen.</li>
+            <li><strong>Technik:</strong> Alle Logo-Dateien sind schriftunabhängige Pfadgrafiken – SVG und PNG sehen auf jedem Gerät identisch aus. Im Web bevorzugt die SVGs einsetzen (randscharf in jeder Größe); PNGs für Office, Druckdaten und Plattformen ohne SVG-Unterstützung.</li>
+          </ul>
+        </section>
+
+        <section id="farben">
+          <h2>3. Farben</h2>
+          <p>Die Palette ist bewusst schmal: zwei Grundtöne, ein Akzent. Kupferorange ist das Erkennungszeichen und wird sparsam eingesetzt – für Aktionen, Nummerierungen, das „S" im Monogramm und das „SÜD" der Wortmarke.</p>
+          <h3>Kernfarben</h3>
+          <div class="swatches">
+            <div class="swatch"><div class="chip" style="background:#191a17"></div><div class="meta"><b>Anthrazit „Ink"</b><code>#191a17 · --ink</code><small>Text, dunkle Sektionen, dunkle Buttons</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#f3f1eb"></div><div class="meta"><b>Warmgrau „Paper"</b><code>#f3f1eb · --paper</code><small>Seitenhintergrund, Formularflächen</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#fff"></div><div class="meta"><b>Weiß</b><code>#ffffff · --white</code><small>Karten, helle Sektionen, Text auf dunkel</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#c9782f"></div><div class="meta"><b>Kupferorange</b><code>#c9782f · --accent</code><small>Buttons, Links, Akzente auf hellem Grund</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#e19a57"></div><div class="meta"><b>Helles Kupfer</b><code>#e19a57 · --accent-light</code><small>Akzente auf dunklem Grund, „SÜD" dunkel</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#696b64"></div><div class="meta"><b>Graugrün „Muted"</b><code>#696b64 · --muted</code><small>Sekundärtext, Beschriftungen</small></div></div>
+          </div>
+          <h3>Dunkle Flächen &amp; Tönungen</h3>
+          <div class="swatches">
+            <div class="swatch"><div class="chip" style="background:#141512"></div><div class="meta"><b>Tiefe</b><code>#141512 · --surface-deep</code><small>Header, Footer, Logo-Anthrazit</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#1b1c19"></div><div class="meta"><b>Hero-Dunkel</b><code>#1b1c19 · --surface-dark</code><small>Hero-Hintergrund unter Bildern</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#262720"></div><div class="meta"><b>Warm-Dunkel</b><code>#262720 · --surface-warm</code><small>Hervorgehobene dunkle Sektionen</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#f3eee7"></div><div class="meta"><b>Icon-Tönung</b><code>#f3eee7 · --tint-icon</code><small>Icon-Flächen auf Weiß</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#f4e5d5"></div><div class="meta"><b>Hinweis-Tönung</b><code>#f4e5d5 · --tint-notice</code><small>Hinweisboxen, Platzhalter-Markierung</small></div></div>
+            <div class="swatch"><div class="chip" style="background:#3c3e38"></div><div class="meta"><b>Text Stark</b><code>#3c3e38 · --text-strong</code><small>Fließtext auf hellem Grund</small></div></div>
+          </div>
+          <h3>Verteilung</h3>
+          <p>Faustregel <strong>60 / 30 / 10</strong>: helle Flächen dominieren, dunkle Flächen strukturieren, Kupferorange setzt Akzente.</p>
+          <div class="ratio">
+            <div style="flex:6;background:var(--paper);color:var(--muted)">60 % HELL</div>
+            <div style="flex:3;background:var(--ink);color:#fff">30 % DUNKEL</div>
+            <div style="flex:1;background:var(--accent);color:#fff">10 %</div>
+          </div>
+        </section>
+
+        <section id="typografie">
+          <h2>4. Typografie</h2>
+          <p>Zwei Schriften, beide frei nutzbar: Für Logo und Headlines die kondensierte <strong>Khand</strong> (SIL Open Font License – kostenlos für privaten und kommerziellen Einsatz; Druckvorlage unter design/fonts/, Web-Version selbst gehostet unter assets/fonts/ – keine externen Server). Für allen Lauftext <strong>Arial / Helvetica</strong> als systemeigene Standardschrift. Charakter entsteht durch den Kontrast: schmale, laute Headlines – ruhiger, neutraler Text.</p>
+          <div class="typoSample"><span>Display · Khand Bold · Zeilenhöhe 0.94</span><div class="tDisplay">Wir bauen.<br><em>Wir unterstützen.</em></div></div>
+          <div class="typoSample"><span>Überschrift H2 · Khand Bold</span><div class="tH2">Substanz gestalten.<br>Werte erhalten.</div></div>
+          <div class="typoSample"><span>Kicker · 12px · Versalien · Laufweite +16 % · mit Linie</span><p class="tKicker" style="margin:0">Bauen &amp; Sanieren</p></div>
+          <div class="typoSample"><span>Fließtext · 15–19px · Zeilenhöhe 1.7–1.8</span><p class="tBody" style="margin:0">Ob Innenausbau, Renovierung oder vorbereitende Arbeiten: Leistungen werden auf Objektzustand, gewünschtes Ergebnis und Projektablauf abgestimmt.</p></div>
+          <ul>
+            <li>Headlines in Khand Bold, gern über mehrere Zeilen gebrochen – die Schmalheit der Schrift erzeugt die Dichte, zusätzliche Laufweiten-Tricks braucht es nicht.</li>
+            <li>Betonte Wörter in Headlines bekommen Kupferorange (<em>em</em>-Element), nie Unterstreichung.</li>
+            <li>Khand nur fett (600/700) und überwiegend in Versalien einsetzen – nie für Fließtext, Formulare oder lange Absätze.</li>
+            <li>Kicker stehen immer über der Headline: Versalien, Amber, vorangestellte Linie.</li>
+            <li>Sätze mit Punkt beenden – auch in Headlines. Das ist Teil des nüchternen Tons.</li>
+          </ul>
+        </section>
+
+        <section id="elemente">
+          <h2>5. Gestaltungselemente</h2>
+          <div class="elGrid">
+            <div class="el"><div class="elDemo"><span class="plus">+</span><span class="plus">+</span><span class="plus">+</span></div><h3>Plus-Marker</h3><p>Aufzählungszeichen und Trust-Symbole – immer in Kupferorange.</p></div>
+            <div class="el"><div class="elDemo"><span class="rhomb"></span><span class="lineDemo"></span><span class="rhomb"></span></div><h3>Rauten &amp; Linien</h3><p>Kleine gedrehte Quadrate als Trenner, 1px-Linien als Ordnungssystem.</p></div>
+            <div class="el"><div class="elDemo"><span class="numDemo">01</span><span class="numDemo">02</span><span class="numDemo">03</span><span class="numDemo">04</span></div><h3>Nummerierung</h3><p>Zweistellige Ziffern in Kupferorange gliedern Karten und Prozessschritte.</p></div>
+            <div class="el"><div class="elDemo" style="font-size:22px">↗ &nbsp; ↓ &nbsp; ↑</div><h3>Pfeile</h3><p>Schlichte Textpfeile als Richtungssignal in Buttons und Links – keine Icon-Bibliotheken.</p></div>
+          </div>
+          <ul style="margin-top:18px">
+            <li><strong>Scharfe Kanten überall:</strong> Buttons, Karten, Bilder und Formularfelder haben 0 Rundung.</li>
+            <li><strong>Feine Rahmen statt Schatten:</strong> Flächen werden durch 1px-Linien (--line) getrennt; Schatten nur dezent bei Hover.</li>
+            <li><strong>Icons:</strong> keine Piktogramm-Sets – Buchstaben (B, S, P), Ziffern und Pfeile übernehmen diese Rolle.</li>
+          </ul>
+        </section>
+
+        <section id="komponenten">
+          <h2>6. Komponenten</h2>
+          <h3>Buttons</h3>
+          <div class="btnRow"><span class="cdBtn primary">Projekt anfragen <span>↗</span></span><span class="cdBtn darkOnLight">Anfrage senden <span>↗</span></span></div>
+          <div class="darkStrip"><span class="cdBtn primary">Projekt anfragen <span>↗</span></span><span class="cdBtn ghostDark">Unsere Leistungen <span>↓</span></span><span class="cdBtn lightOnDark">Bedarf besprechen <span>↗</span></span></div>
+          <ul style="margin-top:18px">
+            <li><strong>Primär:</strong> Kupferorange-Fläche, weißer Text – genau ein Primär-Button pro Sichtbereich.</li>
+            <li><strong>Sekundär:</strong> transparente Fläche mit heller Kontur (auf dunkel) bzw. Anthrazit-Fläche (auf hell).</li>
+            <li>Höhe 54px, Schrift 14px fett, Pfeil rechts, bei Hover minimal anheben.</li>
+          </ul>
+          <h3>Karten &amp; Hinweisboxen</h3>
+          <ul>
+            <li>Karten: weiße Fläche, 1px-Rahmen, Nummer oben links, Icon-Fläche in --tint-icon oben rechts.</li>
+            <li>Hinweise/Platzhalter: Fläche in --tint-notice mit Kupfer-Kante links – die einzige „laute" Fläche im System.</li>
+          </ul>
+        </section>
+
+        <section id="bildsprache">
+          <h2>7. Bildsprache</h2>
+          <ul>
+            <li>Echte Baustellen- und Handwerkssituationen, natürliche warme Farbtemperatur – keine sterilen Stockfoto-Posen.</li>
+            <li>Bilder liegen immer <strong>unter einem dunklen Verlauf</strong> (Anthrazit, von links bzw. unten), damit weißer Text darauf funktioniert.</li>
+            <li>Bildunterschriften auf Bildern: Kicker in Hellem Kupfer + fette weiße Zeile.</li>
+            <li>Format WebP, Zuschnitt großzügig – Bilder wirken als Fläche, nicht als Galerie.</li>
+          </ul>
+        </section>
+
+        <section id="dodont">
+          <h2>8. Do &amp; Don't</h2>
+          <div class="dodont">
+            <div class="yes"><h3>Do</h3><ul>
+              <li>Kupferorange sparsam einsetzen – ein Akzent pro Blickbereich</li>
+              <li>Große Headlines, viel Weißraum, feine Linien</li>
+              <li>„SÜD" immer als farbigen Anker der Wortmarke zeigen</li>
+              <li>Neue Farben ausschließlich aus brand.css nehmen</li>
+              <li>Scharfe Kanten in allen Medien durchhalten</li>
+            </ul></div>
+            <div class="no"><h3>Don't</h3><ul>
+              <li>Keine zusätzlichen Farben, Verläufe oder Neon-Töne</li>
+              <li>Keine abgerundeten Ecken oder weichen Schatten</li>
+              <li>Keine zusätzlichen Schriftarten – nur Khand (Logo &amp; Headlines) und Arial (Text)</li>
+              <li>Kein Icon-Set-Mix – Ziffern, Buchstaben, Pfeile genügen</li>
+              <li>Logo nicht verzerren, umfärben oder mit Effekten versehen</li>
+            </ul></div>
+          </div>
+        </section>
+
+        <section id="tokens">
+          <h2>9. Design-Tokens (verbindlich)</h2>
+          <p>Technische Festlegung in <strong>assets/brand.css</strong> – wird von allen Seiten als erstes Stylesheet geladen. Farbänderungen passieren nur dort, nie in einzelnen Seiten. Für Druck &amp; Werbetechnik gelten die HEX-Werte als Referenz.</p>
+          <pre class="tokens"><span class="c">/* Kernfarben */</span>
+--ink: #191a17;            <span class="c">/* Anthrazit – Text &amp; dunkle Flächen */</span>
+--paper: #f3f1eb;          <span class="c">/* Seitenhintergrund */</span>
+--white: #ffffff;          <span class="c">/* Karten &amp; Kontrastflächen */</span>
+--accent: #c9782f;         <span class="c">/* Kupferorange – Buttons &amp; Akzente */</span>
+--accent-light: #e19a57;   <span class="c">/* Helles Kupfer auf dunklem Grund */</span>
+--muted: #696b64;          <span class="c">/* Sekundärtext */</span>
+--line: rgba(25,26,23,.14);<span class="c">/* Trennlinien */</span>
+
+<span class="c">/* Dunkle Flächen */</span>
+--surface-deep: #141512;   --surface-dark: #1b1c19;   --surface-warm: #262720;
+
+<span class="c">/* Tönungen &amp; Text */</span>
+--tint-icon: #f3eee7;      --tint-notice: #f4e5d5;    --notice-text: #5d4935;
+--text-strong: #3c3e38;    --text-soft: #494b45;      --text-label: #4d4f48;
+
+<span class="c">/* Schrift &amp; Form */</span>
+--font-sans: Arial, Helvetica, sans-serif;         <span class="c">/* Lauftext (System) */</span>
+--font-display: 'Khand', 'Arial Narrow', Arial;    <span class="c">/* Headlines &amp; Logo (SIL OFL) */</span>
+--radius: 0;               <span class="c">/* Marke = scharfe Kanten */</span></pre>
+        </section>
+
+        <p class="updated">Corporate Design v1.0 · festgelegt August 2026 · Quelle: assets/brand.css</p>
+      </div>
+    </div></div>
+
+    <section class="backBar"><div class="wrap"><b>Zurück zur Website?</b><a href="homepage.html">Zur Startseite <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footerTop"><div><a class="brand" href="homepage.html"><img src="assets/logo-horizontal-hell.svg" alt="Baudienstleistungen Süd" width="1617" height="260"></a><p>Bauen · Sanieren · Personalservice</p></div><div><h3>Navigation</h3><a href="homepage.html#leistungen">Leistungen</a><a href="homepage.html#ueber-uns">Über uns</a><a href="homepage.html#personalservice">Personalservice</a><a href="homepage.html#kontakt">Kontakt</a></div><div><h3>Rechtliches</h3><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div></div><div class="wrap footerBottom"><span>© 2026 Baudienstleistungen Süd</span><a href="#top">Nach oben ↑</a></div></footer>
+
+  <script>
+    const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Menü öffnen')}));
+  </script>
+</body>
+</html>

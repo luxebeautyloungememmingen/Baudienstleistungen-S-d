@@ -1,4 +1,5 @@
-:root{--ink:#191a17;--paper:#f3f1eb;--white:#fff;--accent:#c9782f;--accent-light:#e19a57;--muted:#696b64;--line:rgba(25,26,23,.14)}
+/* Layout-Styles für Unterseiten (Rechtliches / Corporate Design).
+   Farb- und Typo-Tokens kommen verbindlich aus assets/brand.css – hier nichts doppeln. */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:104px}
 body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
@@ -10,9 +11,8 @@ button{font:inherit}
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent-light);outline-offset:3px}
 
 .header{position:fixed;inset:0 0 auto;z-index:40;height:84px;padding-inline:max(24px,calc((100vw - 1180px)/2));display:flex;align-items:center;justify-content:space-between;color:#fff;background:rgba(20,21,18,.94);border-bottom:1px solid rgba(255,255,255,.11);backdrop-filter:blur(14px)}
-.brand{display:inline-flex;align-items:center;gap:7px;line-height:1;white-space:nowrap;text-decoration:none}
-.brand small{font-size:11px;font-weight:850;letter-spacing:.07em}
-.brand b{color:var(--accent-light);font-size:26px;line-height:1;letter-spacing:-.04em}
+.brand{display:inline-flex;align-items:center;text-decoration:none}
+.brand img{height:38px;width:auto;display:block}
 .nav{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:650}
 .nav>a:not(.navCta){position:relative;padding-block:31px;color:rgba(255,255,255,.82);text-decoration:none}
 .nav>a:not(.navCta):after{content:"";position:absolute;inset:auto 0 22px;height:1px;background:var(--accent-light);transform:scaleX(0);transform-origin:left;transition:.2s}
@@ -72,6 +72,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent-light);outli
 .footerBottom{padding-top:23px;display:flex;justify-content:space-between;gap:20px;color:rgba(255,255,255,.4);border-top:1px solid rgba(255,255,255,.13);font-size:11px}
 .footerBottom a{text-decoration:none}
 
+/* Corporate Display-Schrift (Khand – siehe brand.css) */
+.legalHero h1,.doc h2,.backBar b{font-family:var(--font-display);font-weight:700;letter-spacing:.012em;line-height:.94}
+.legalHero h1{font-size:clamp(50px,6.8vw,96px)}
+.doc h2{font-size:clamp(30px,3.4vw,42px)}
+.backBar b{font-size:clamp(26px,3.2vw,36px)}
+
 @media(max-width:1000px){
   .header{height:74px;padding-inline:22px}
   .menu{display:grid;gap:7px;padding:10px;background:none;border:0;cursor:pointer}
@@ -86,8 +92,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent-light);outli
 @media(max-width:760px){
   html{scroll-padding-top:94px}
   .wrap{width:calc(100% - 32px)}
-  .brand small{font-size:9px;letter-spacing:.055em}
-  .brand b{font-size:22px}
+  .brand img{height:30px}
   .legalHero{padding:120px 0 46px}
   .legalBody{padding:50px 0 80px}
   .footerTop{grid-template-columns:1fr}

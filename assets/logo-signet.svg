@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-labelledby="title desc">
+  <title id="title">BS-Signet – Baudienstleistungen Süd</title>
+  <desc id="desc">Kantiges dachförmiges BS-Signet in Anthrazit und Kupferorange.</desc>
+  <g transform="translate(15 17)">
+    <path fill="#141512" fill-rule="evenodd" d="M0 82 140 0v121l-20 18 20 18v69H0V82zm34 18v38h72V58L34 100zm0 72v20h72v-35H34v15z"/>
+    <path fill="#c9782f" d="M150 0 290 80v42l-105-63v63h105v104H150v-36h105v-33h-70l-35-35V0z"/>
+  </g>
+</svg>
