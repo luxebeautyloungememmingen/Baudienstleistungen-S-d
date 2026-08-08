@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Baudienstleistungen Süd</title>
+  <desc id="desc">Social-Media-Vorschau für Baudienstleistungen Süd.</desc>
+  <rect width="1200" height="630" fill="#141512"/>
+  <path d="M0 510h1200v120H0z" fill="#c9782f"/>
+  <g transform="translate(72 94)">
+    <rect x="8" y="8" width="190" height="190" rx="4" fill="none" stroke="#ffffff" stroke-width="18"/>
+    <text x="31" y="160" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="148" font-weight="900" letter-spacing="-13">B</text>
+    <text x="104" y="160" fill="#e19a57" font-family="Arial,Helvetica,sans-serif" font-size="148" font-weight="900" letter-spacing="-11">S</text>
+    <path d="M112 8h86v56" fill="none" stroke="#e19a57" stroke-width="18"/>
+  </g>
+  <text x="320" y="178" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="57" font-weight="900" letter-spacing="1">BAUDIENSTLEISTUNGEN</text>
+  <text x="320" y="270" fill="#e19a57" font-family="Arial,Helvetica,sans-serif" font-size="94" font-weight="900" letter-spacing="1">SÜD</text>
+  <rect x="320" y="304" width="140" height="8" fill="#e19a57"/>
+  <text x="72" y="575" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700" letter-spacing="4">BAUEN · SANIEREN · PERSONALSERVICE</text>
+</svg>
