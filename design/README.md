@@ -1,5 +1,7 @@
 # Logo – Baudienstleistungen Süd
 
+Das Logo basiert auf einem kantigen, dachförmigen BS-Monogramm und einer schmalen technischen Wortmarke. Diese Form ist für alle Varianten verbindlich.
+
 ## Dateien
 
 - `logo-horizontal.svg` – Hauptlogo für helle Hintergründe

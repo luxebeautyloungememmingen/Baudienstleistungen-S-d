@@ -1,15 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 260" role="img" aria-labelledby="title desc">
   <title id="title">Baudienstleistungen Süd</title>
-  <desc id="desc">Horizontale Wortmarke mit geometrischem BS-Signet in Anthrazit und Kupferorange.</desc>
-  <g transform="translate(20 20)">
-    <rect x="8" y="8" width="164" height="164" rx="3" fill="none" stroke="#141512" stroke-width="16"/>
-    <text x="29" y="139" fill="#141512" font-family="Arial,Helvetica,sans-serif" font-size="128" font-weight="900" letter-spacing="-12">B</text>
-    <text x="92" y="139" fill="#c9782f" font-family="Arial,Helvetica,sans-serif" font-size="128" font-weight="900" letter-spacing="-10">S</text>
-    <path d="M98 8h74v48" fill="none" stroke="#c9782f" stroke-width="16"/>
+  <desc id="desc">Kantiges BS-Monogramm mit technischer Wortmarke in Anthrazit und Kupferorange.</desc>
+  <g transform="translate(20 17)">
+    <path fill="#141512" fill-rule="evenodd" d="M0 82 140 0v121l-20 18 20 18v69H0V82zm34 18v38h72V58L34 100zm0 72v20h72v-35H34v15z"/>
+    <path fill="#c9782f" d="M150 0 290 80v42l-105-63v63h105v104H150v-36h105v-33h-70l-35-35V0z"/>
   </g>
-  <g font-family="Arial,Helvetica,sans-serif" font-weight="900">
-    <text x="238" y="130" fill="#141512" font-size="52" letter-spacing="1.2">BAUDIENSTLEISTUNGEN</text>
-    <text x="990" y="130" fill="#c9782f" font-size="72" letter-spacing="1">SÜD</text>
+  <g font-family="Agency FB,Arial Narrow,Arial,sans-serif" font-weight="700">
+    <text x="360" y="176" fill="#141512" font-size="116" letter-spacing="2">BAUDIENSTLEISTUNGEN</text>
+    <text x="1320" y="176" fill="#c9782f" font-size="132" letter-spacing="2">SÜD</text>
   </g>
-  <rect x="240" y="153" width="136" height="8" fill="#c9782f"/>
 </svg>
